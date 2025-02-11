@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1>Welcome to My Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <section id="about-me">
+            <h3>About Me</h3>
+            <p>Hello! I am a front and backend developer who enjoys creating projects for businesses and clients. This portfolio showcases some of my work and interests.</p>
+        </section>
+
+        <section id="projects">
+            <h3>Projects</h3>
+            <img src="images/1.jpg" alt="First website - Image from the internet">
+            <img src="images/2.jpg" alt="Second website - Image from the internet">
+            <img src="images/3.jpg" alt="Third website - Image from the internet">
+            
+            <table>
+                <tr>
+                    <th>Project Name</th>
+                    <th>Description</th>
+                    <th>Year</th>
+                </tr>
+                <tr>
+                    <td>Retail</td>
+                    <td>Retail store website.</td>
+                    <td>2024</td>
+                </tr>
+                <tr>
+                    <td>Magazine</td>
+                    <td>Magazine website.</td>
+                    <td>2024</td>
+                </tr>
+                <tr>
+                    <td>Accounting</td>
+                    <td>Accounting website.</td>
+                    <td>2023</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="contact">
+            <h3>Contact</h3>
+            <form class="contact">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name">
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email">
+
+                <label>How did you hear about this portfolio?</label>
+                <section class="radio-section">
+                    <input type="radio" id="o1" name="source">
+                    <label for="o1">Social Media</label>
+                    <input type="radio" id="o2" name="source">
+                    <label for="o2">Co-worker</label>
+                    <input type="radio" id="o3" name="source">
+                    <label for="o3">Family</label>
+                    <input type="radio" id="o4" name="source">
+                    <label for="o4">Friend</label>
+                </section>
+                
+                <label>Skills/Interests:</label>
+                <section class="checkbox-section">
+                    <input type="checkbox" id="c1">
+                    <label for="c1">UI Design</label>
+                    <input type="checkbox" id="c2">
+                    <label for="c2">UI/UX Development</label>
+                    <input type="checkbox" id="c3">
+                    <label for="c3">Backend Development</label>
+                </section>
+
+                <label for="message">Comments or Messages:</label>
+                <textarea id="message"></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <footer>
+            &copy; Chadrick Gonzales 2025
+        </footer>
+    </body>
+</html>
