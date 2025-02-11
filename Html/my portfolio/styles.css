@@ -1,0 +1,135 @@
+body {
+    font-family: "Georgia", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+}
+
+h1 {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    margin: 0;
+}
+
+nav {
+    background-color: #444;
+    padding: 10px 0;
+}
+
+nav ul {
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 15px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+section {
+    padding: 40px;
+    background-color: white;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 10px;
+}
+
+img {
+    width: 30%;
+    height: 300px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border: 1px solid #949494;
+}
+
+th, td {
+    border: 1px solid #949494;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #444;
+    color: white;
+}
+
+.contact {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    text-align: left;
+    width: 50%;
+}
+
+.contact label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact input[type="text"],
+.contact input[type="email"],
+.contact textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.radio-section,
+.checkbox-section {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.radio-section label,
+.checkbox-section label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: normal;
+}
+
+.radio-section input,
+.checkbox-section input {
+    margin: 0;
+    width: auto;
+}
+
+.contact button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact button:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
