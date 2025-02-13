@@ -1,0 +1,3 @@
+I finished the task for about 15mins, The struggle I encounter is where i should put the flex that will layout the blocks on the middle.
+I tried first to add a flex on the body and it did not move the Blocks on the middle so i try to do it to the main tag.
+I assigned a class for that and that is what i call on my css file.

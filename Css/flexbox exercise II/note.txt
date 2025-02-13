@@ -1,0 +1,4 @@
+I Finished this task in 1hr 
+The difficulties I faced is only using display:flex, justify-content and align-items to move and align the boxes. 
+Its just trial and error for me trying different things using that tags to see what the outcome will be and how the content in html react.
+Im getting the hang of using this to align the content in my html rather than depending on margin and padding only.
