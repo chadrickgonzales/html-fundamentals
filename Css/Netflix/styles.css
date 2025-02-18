@@ -1,0 +1,255 @@
+* {
+    box-sizing: border-box;
+    outline: 1px color(red);
+}
+
+body { 
+    background-color: #000; 
+    color: #fff; 
+    margin: 0; 
+    font-family: Arial, sans-serif; 
+    overflow-x: hidden; 
+    width: 100%;
+}
+
+html {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.navbar { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    padding: 20px; 
+    background: transparent; 
+    position: absolute; 
+    width: 100%; 
+    top: 0; 
+    z-index: 100; 
+}
+
+.navbar a { 
+    color: #e50914; 
+    font-size: 30px;
+    text-decoration: none; 
+    margin: 0 10px; 
+    font-weight: bold;
+}
+
+.dropdown {
+    margin-left: 1000px; 
+}
+
+.dropbtn {
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #1a1a1a62;
+    min-width: 30px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    font-size: 16px;
+    color: white;
+    padding: 10px 0px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #575757;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.navbar a.btn { 
+    color: #ffffff;
+    background: #e50914; 
+    font-size: 16px;
+    font-weight: normal;
+    padding: 5px 15px; 
+    border-radius: 5px; 
+}
+
+.first-section { 
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('netflix_image_asset/PH-en-20250113-TRIFECTA-perspective_8171c01e-c334-403b-bfa2-133bcc962aaf_small.jpg') center center/cover no-repeat;
+    height: 100vh; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+    padding: 0 20px; 
+    box-sizing: border-box; 
+}
+
+.first-section header { 
+    /* Adjusted to target header inside first-section */
+    text-align: center;
+}
+
+.first-section h1 { 
+    font-size: 4rem; 
+    font-weight: bold; 
+    margin-bottom: 20px; 
+}
+
+.first-section p { 
+    font-size: 1.2rem; 
+    margin-bottom: 20px; 
+}
+
+.input-group { 
+    max-width: 500px; 
+    margin: 0 auto; 
+    display: flex; 
+}
+
+.input-group input {
+    flex: 1;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ffffff;
+    border-radius: 5px 0 0 5px;
+    background: #353535;
+}
+
+.input-group input::placeholder {
+    color: #bbb;
+}
+
+.input-group button { 
+    background: #e50914; 
+    border: none; 
+    padding: 10px 20px; 
+    color: #fff; 
+    border-radius: 0 5px 5px 0; 
+    cursor: pointer; 
+}
+
+.trending { 
+    padding: 50px 20px; 
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.images { 
+    padding: 30px 0px; 
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%; 
+}
+
+.trending h2 { 
+    margin-bottom: 20px;
+    margin-left: 200px; 
+    float: left;
+}
+
+.card { 
+    background: #222; 
+    border-radius: 10px; 
+    overflow: hidden; 
+    text-align: center; 
+    flex: 0 0 auto;
+    width: 250px;
+}
+
+.card img { 
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+}
+
+.reasons { 
+    padding: 50px 20px; 
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.text { 
+    padding: 30px 0px; 
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%; 
+}
+
+.reasons h2 { 
+    margin-bottom: 20px;
+    margin-left: 200px; 
+    float: left;
+}
+
+.card1 { 
+    background: #203b83; 
+    border-radius: 10px; 
+    overflow: hidden; 
+    text-align: center; 
+    flex: 0 0 auto;
+    width: 250px;
+    height: 400px;
+}
+
+.card1 h3 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 500px;
+}
+
+footer p{
+    margin-left: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.input-group-footer {
+    margin: 0 auto; 
+    display: flex; 
+}
+
+.input-group-footer input {
+    flex: 1;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ffffff;
+    border-radius: 5px 0 0 5px;
+    background: #353535;
+}
+
+.input-group-footer input::placeholder {
+    color: #bbb;
+}
+
+.input-group-footer button { 
+    background: #e50914; 
+    border: none; 
+    padding: 10px 20px; 
+    color: #fff; 
+    border-radius: 0 5px 5px 0; 
+    cursor: pointer; 
+}

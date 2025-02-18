@@ -1,0 +1,4 @@
+Aligning multiple content in a section can become a time consuming task like in the nav bar aligning the logo with
+ the nav buttons to the search bar it takes time to finally align it to the way i wanted it to look like. 
+ Aligning in css still gives me a hard time in development but im still adjusting to it.
+ It took me an hour and a half to finish it.
