@@ -1,0 +1,448 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: white;
+    color: #232629;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+/*Start of header*/
+header {
+    background-color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e4e6e8;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    gap: 20px;
+}
+
+header img {
+    height: 30px;
+}
+
+.header-content {
+    margin-left: 80px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.search-input {
+    padding: 5px;
+    border: 1px solid #e4e6e8;
+    border-radius: 4px;
+    width: 1050px;
+    height: 20px;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 5px;
+    margin-left: -20px;
+}
+
+.login-btn {
+    padding: 5px 10px;
+    border: 1px solid #0077cc;
+    background-color: white;
+    color: #0077cc;
+    border-radius: 4px;
+}
+
+.signup-btn {
+    padding: 5px 10px;
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    margin-right: 160px;
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    color: #525960;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: #f48024;
+}
+
+/*End of header*/
+
+/*Start of sidebar*/
+
+.sidebar {
+    width: 175px;
+    background-color: white;
+    padding-top: 20px;
+    padding-left: 80px;
+    height: 100vh;
+    margin-top: 30px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 25px 0;
+}
+
+.sidebar ul li a {
+    color: #525960;
+    text-decoration: none;
+}
+
+.sidebar ul li a:hover {
+    color: #f48024;
+}
+
+/*End of sidebar*/
+
+.main-content {
+    background-color: white;
+    flex: 1;
+}
+
+/*Start of first section*/
+
+.first-section {
+    padding-top: 100px;
+    background-color: #F9FAFA;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: relative;
+    max-width: 90%;
+    border-radius: 10px; 
+}
+
+.text-content {
+    margin-top: 20px;
+    margin-left: 60px;
+    max-width: 50%;
+    position: relative;
+    z-index: 1;
+}
+
+
+.highlighted-text {
+    color: white;
+    position: relative;
+    display: inline-block;
+    z-index: 2;
+    background-image: url('Stack Overflow/background-image.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0 10px;
+    min-width: 100px;
+    min-height: 50px;
+}
+
+.highlighted-text span {
+    position: relative;
+    z-index: 3;
+}
+
+.first-section h1 {
+    font-size: 50px;
+    margin: 0;
+}
+
+.first-section p {
+    font-size: 20px;
+    margin: 0 0;
+}
+
+.first-section .signup-btn,
+.first-section .community-btn {
+    padding: 10px 20px;
+    margin-right: 10px;
+    margin-top: 80px;
+    border: none;
+    border-radius: 5px;
+}
+
+.first-section .signup-btn {
+    height: 45px;
+    background-color: #1B75D0;
+    color: white;
+}
+
+.first-section .community-btn {
+    background-color: #F9FAFA;
+    color: #5CA4DF;
+    font-size: 16px ;
+}
+
+.first-section-image {
+    
+    padding-right: 50px;
+    width: 650px;
+    height: 400px;
+}
+
+
+/*End of first section*/
+
+p {
+    font-size: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+/*Start of second section*/
+.second-section {
+    padding-top: 30px;
+    padding-left: 50px;
+    background-color: #F9FAFA;
+    display: flex;
+    flex-direction: flex;
+    position: relative;
+    max-width: 87%;
+    gap: 260.5px;
+    border: 1px solid rgba(121, 121, 121, 0.384);
+    border-radius: 10px; 
+}
+
+.second-text-content {
+    flex-direction: column;
+    max-width: 50%;
+}
+
+.second-section-image {
+    width: 200px;
+    height: 50px;
+}
+
+.second-section p {
+    font-size: 20px;
+    margin: 0;
+}
+
+.second-section .second-signup-btn,
+.second-section .second-community-btn {
+    padding: 10px 20px;
+    margin-right: 10px;
+    margin-top: 80px;
+    border: none;
+    border-radius: 5px;
+}
+
+.second-section .second-signup-btn {
+    height: 45px;
+    background-color: #1B75D0;
+    color: white;
+}
+
+.second-section .second-community-btn {
+    background-color: #F9FAFA;
+    color: #5CA4DF;
+    font-size: 16px ;
+}
+
+.second-section-backgroundimage {
+    margin-top: 20px;
+    width: 600px;
+    height: 250px;
+}
+
+/*End of second section*/
+
+/*Start of third section*/
+.third-section {
+    margin-bottom: 40px;
+    margin-top: 40px;
+    padding-top: 30px;
+    padding-left: 50px;
+    background-color: #3B4045;
+    display: flex;
+    flex-direction: flex;
+    position: relative;
+    max-width: 87%;
+    gap: 174.5px;
+    border: 1px solid rgba(121, 121, 121, 0.384);
+    border-radius: 10px; 
+}
+
+.third-text-content {
+    flex-direction: column;
+    max-width: 50%;
+}
+
+.third-section-image {
+    width: 200px;
+    height: 50px;
+}
+
+.third-section p {
+    color: white;
+    font-size: 20px;
+    margin: 0;
+}
+
+.third-section .third-signup-btn {
+    padding: 10px 20px;
+    margin-right: 10px;
+    margin-top: 80px;
+    border: none;
+    border-radius: 5px;
+}
+
+.third-section .third-signup-btn {
+    height: 45px;
+    background-color: #E77019;
+    color: white;
+}
+
+
+.third-section-backgroundimage {
+    margin-top: 20px;
+    width: 600px;
+    height: 250px;
+}
+/*End of third section*/
+
+.twin {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    
+}
+
+.twin1-section,
+.twin2-section {
+    background-color: #F9FAFA;
+    border: 1px solid rgba(121, 121, 121, 0.384);
+    border-radius: 10px;
+    padding: 20px;
+    width: 45%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.twin1-section-image,
+.twin2-section-image {
+    width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.twin1-text-content,
+.twin2-text-content {
+    position: relative;
+    z-index: 1;
+}
+
+.twin1-text-content p,
+.twin2-text-content p {
+    font-size: 20px;
+    margin: 0;
+}
+
+.twin1-section .twin1-signup-btn {
+    padding: 10px 20px;
+    margin-right: 10px;
+    margin-top: 80px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1B75D0;
+    color: #ffffff;
+    font-size: 16px ;
+}
+
+.twin2-section .twin2-signup-btn {
+    padding: 10px 20px;
+    margin-right: 10px;
+    margin-top: 80px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1B75D0;
+    color: #ffffff;
+    font-size: 16px ;
+}
+
+.twin1-section .twin1-community-btn {
+    padding: 10px 20px;
+    margin-right: 10px;
+    margin-top: 80px;
+    border: none;
+    border-radius: 5px;
+    background-color: #F9FAFA;
+    color: #5CA4DF;
+    font-size: 16px ;
+}
+
+.fourth-section {
+    margin-bottom: 40px;
+    margin-top: 40px;
+    padding-top: 30px;
+    padding-left: 50px;
+    padding-bottom: 20px;
+    background-color: #F9FAFA;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    max-width: 87%;
+    gap: 174.5px;
+    border: 1px solid rgba(121, 121, 121, 0.384);
+    border-radius: 10px;
+    overflow: visible;
+}
+
+.fourth-text-content {
+    max-width: 50%;
+}
+
+.fourth-section-image {
+    width: 200px;
+    height: 50px;
+}
+
+.fourth-section p {
+    font-size: 20px;
+    margin: 0;
+}
+
+.fourth-section .fourth-signup-btn {
+    padding: 10px 20px;
+    margin-right: 10px;
+    margin-top: 40px;
+    border: none;
+    border-radius: 5px;
+}
+
+.fourth-section .fourth-signup-btn {
+    height: 45px;
+    background-color: #1B75D0;
+    color: white;
+}
+
+
+.fourth-section-backgroundimage {
+    position: absolute;
+    top: -87px;
+    right: 20px; 
+    width: 600px;
+    height: 330px;
+    z-index: 2;
+}
+/*End of fourth section*/

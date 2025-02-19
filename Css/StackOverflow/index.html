@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stack Overflow Clone</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <section class="header-content">
+            <img src="https://cdn.sstatic.net/Sites/stackoverflow/company/img/logos/so/so-logo.png" alt="Stack Overflow Logo">
+            <nav>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">OverflowAI</a></li>
+                </ul>
+            </nav>
+        </section>
+        <input type="text" placeholder="Search..." class="search-input">
+        <section class="auth-buttons">
+            <button class="login-btn">Log in</button>
+            <button class="signup-btn">Sign up</button>
+        </section>
+    </header>
+
+    <!-- Sidebar below the Header -->
+    <aside class="sidebar">
+        <ul>
+            <li><a href="#"><img src="Stack Overflow/icons/home.png" alt="Home" class="sidebar-icon"> Home</a></li>
+            <li><a href="#"><img src="Stack Overflow/icons/questions.png" alt="questions" class="sidebar-icon">Questions</a></li>
+            <li><a href="#"><img src="Stack Overflow/icons/tags.png" alt="tags" class="sidebar-icon">Tags</a></li>
+            <li><a href="#"><img src="Stack Overflow/icons/users.png" alt="users" class="sidebar-icon">Users</a></li>
+            <li><a href="#"><img src="Stack Overflow/icons/companies.png" alt="companies" class="sidebar-icon">Companies</a></li>
+            <li><a href="#"><img src="Stack Overflow/icons/discussions.png" alt="discussions" class="sidebar-icon">Discussions</a></li>
+        </ul>
+    </aside>
+
+    <main class="main-content">
+        <section class="first-section">
+            <form class="text-content" action="/signup" method="POST">
+                <h1>Every <span class="highlighted-text">developer</span> has a</h1>
+                <h1>tab open to Stack Overflow.</h1>
+                <p>For over 15 years we’ve been the Q&amp;A platform of choice that </p>
+                <p>millions of people visit every month to ask questions, learn, and share </p>
+                <p>technical knowledge.</p>
+        
+                <button type="submit" class="signup-btn">Sign up</button>
+                <button type="button" class="community-btn" onclick="window.location.href='/community';">Visit the community</button>
+            </form>
+            <img src="Stack Overflow/illo-home-hero.png" alt="first-section background image" class="first-section-image">
+        </section>
+        
+
+        <p>Services for companies of all shapes & sizes.</p>
+
+        <section class="second-section">
+            <form class="second-text-content" action="/signup" method="POST">
+                <img src="https://cdn.sstatic.net/Sites/stackoverflow/company/img/logos/so/so-logo.png" class="second-section-image">
+                <p>Where developers and technologies share private knowledge</p>
+                <p class="p">with coworkers.</p>
+
+                <button type="submit" class="second-signup-btn">Explore Teams</button>
+                <button type="button" class="second-community-btn" onclick="window.location.href='/community';">Try for free</button>
+            </form>
+            <img src="Stack Overflow\home-teams.png" alt="first-section background image" class="second-section-backgroundimage">
+        </section>
+
+        <section class="third-section">
+            <form class="third-text-content" action="/signup" method="POST">
+                <img src="https://cdn.sstatic.net/Sites/stackoverflow/company/img/logos/so/so-logo.png" class="third-section-image">
+                <p>Now available! A suite of GenAi tools for Stack Overflow for Teams that</p>
+                <p class="p">helps connect employees to knowledge faster.</p>
+
+                <button type="submit" class="third-signup-btn">Supercharge your Team</button>
+            </form>
+            <img src="Stack Overflow\home-overflowai.png" alt="first-section background image" class="third-section-backgroundimage">
+        </section>
+
+        <div class="twin">
+            <section class="twin1-section">
+                <form class="twin1-text-content" action="/signup" method="POST">
+                    <img src="https://cdn.sstatic.net/Sites/stackoverflow/company/img/logos/so/so-logo.png" class="twin1-section-image">
+                    <p>Reach the world's largest audience of developers and</p>
+                    <p class="p">technologists.</p>
+                    <button type="submit" class="twin1-signup-btn">Advertising solutions</button>
+                    <button type="button" class="twin1-community-btn" onclick="window.location.href='/community';">Build your employer brand</button>
+                </form>
+            </section>
+
+            <section class="twin2-section">
+                <form class="twin2-text-content" action="/signup" method="POST">
+                    <img src="https://cdn.sstatic.net/Sites/stackoverflow/company/img/logos/so/so-logo.png" class="twin2-section-image">
+                    <p>A subscription-based API service that provides continous</p>
+                    <p class="p">access to Stack Overflow's public dataset to train and fine-</p>
+                    <p>tune large language models.</p>
+                    <button type="submit" class="twin2-signup-btn">API solutions for business</button>
+                </form>
+            </section>
+        </div>
+
+        <p>Work Here</p>
+
+        <section class="fourth-section">
+            <form class="fourth-text-content" action="/signup" method="POST">
+                <img src="https://cdn.sstatic.net/Sites/stackoverflow/company/img/logos/so/so-logo.png" class="fourth-section-image">
+                <p>Join our mission to help empower the world to develop</p>
+                <p class="p">technology through collective knowledge.</p>
+
+                <button type="submit" class="fourth-signup-btn">Careers at Stack Overflow</button>
+            </form>
+            <img src="Stack Overflow\illo-home-careers.png" alt="first-section background image" class="fourth-section-backgroundimage">
+        </section>
+        
+    </main>
+</body>
+</html>
