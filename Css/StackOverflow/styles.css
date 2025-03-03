@@ -446,3 +446,213 @@ p {
     z-index: 2;
 }
 /*End of fourth section*/
+
+@media screen and (max-width: 1024px) {
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        gap: 15px;
+        padding: 0;
+        margin: 0;
+        display: none;
+    }
+
+
+    .sidebar {
+        width: 140px;
+        padding-left: 15px;
+    }
+
+    .first-section,
+    .second-section,
+    .third-section,
+    .fourth-section {
+        max-width: 95%;
+        padding: 35px;
+    }
+
+    .first-section-image,
+    .second-section-backgroundimage,
+    .third-section-backgroundimage,
+    .fourth-section-backgroundimage {
+        width: 85%;
+        max-width: 500px;
+        height: auto;
+    }
+
+    .twin {
+        gap: 15px;
+    }
+
+    .twin1-section,
+    .twin2-section {
+        width: 48%;
+    }
+
+    .fourth-section-backgroundimage {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        padding: 10px;
+        flex-wrap: wrap;
+    }
+
+    .header-content {
+        margin-left: 0;
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .search-input {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .auth-buttons {
+        display: none;
+    }
+
+    .sidebar {
+        width: 120px;
+        padding-left: 10px;
+    }
+
+    .first-section,
+    .second-section,
+    .third-section,
+    .fourth-section {
+        margin-top: 180px;
+        max-width: 100%;
+        padding: 25px;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .text-content,
+    .second-text-content,
+    .third-text-content,
+    .fourth-text-content {
+        max-width: 90%;
+    }
+
+    .first-section h1 {
+        font-size: 32px;
+    }
+
+    .first-section p,
+    .second-section p,
+    .third-section p,
+    .fourth-section p {
+        font-size: 18px;
+    }
+
+    .first-section-image,
+    .second-section-backgroundimage,
+    .third-section-backgroundimage,
+    .fourth-section-backgroundimage {
+        width: 90%;
+        max-width: 400px;
+        height: auto;
+    }
+
+    .twin {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .twin1-section,
+    .twin2-section {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        flex-direction: column;
+        overflow-x: hidden;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 8px;
+    }
+
+    .header-content {
+        margin-left: 0;
+        gap: 5px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .search-input {
+        width: 90%;
+        max-width: 250px;
+    }
+
+    .auth-buttons {
+        flex-direction: row;
+        gap: 5px;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    .first-section,
+    .second-section,
+    .third-section,
+    .fourth-section {
+        max-width: 100%;
+        padding: 20px;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .first-section h1 {
+        font-size: 26px;
+    }
+
+    .first-section p,
+    .second-section p,
+    .third-section p,
+    .fourth-section p {
+        font-size: 16px;
+    }
+
+    .first-section-image,
+    .second-section-backgroundimage,
+    .third-section-backgroundimage,
+    .fourth-section-backgroundimage {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+
+    .signup-btn,
+    .community-btn,
+    .second-signup-btn,
+    .second-community-btn,
+    .third-signup-btn,
+    .fourth-signup-btn {
+        width: 100%;
+        max-width: 220px;
+    }
+
+    .twin {
+        gap: 10px;
+        flex-direction: column;
+    }
+
+    .twin1-section,
+    .twin2-section {
+        width: 100%;
+    }
+}

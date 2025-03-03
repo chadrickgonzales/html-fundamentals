@@ -1,0 +1,105 @@
+task 1
+function generatePattern() {  
+  let result = "";  
+  for (let i = 1; i <= 3; i++) {  
+    for (let j = 1; j <= i; j++) {  
+      result += j + " ";  
+    }  
+    result += "\n";  
+  }  
+  return result;  
+}  
+
+console.log(generatePattern());
+
+
+1
+12
+123
+this is my answer becuase i think that it will print from 1 in increment until it recheas number 3 and thats why it stop in 123
+
+
+
+
+task 2
+function swapFirstLast(arr) {  
+  let first = arr.shift();  
+  let last = arr.pop();  
+  arr.unshift(last);  
+  arr.push(first);  
+  return arr;  
+}  
+
+let numbers = [10, 20, 30, 40];  
+console.log(swapFirstLast(numbers));  
+console.log(numbers);  
+
+40 30 20 10  the shift will removes and returns the first element of the array
+              the pop will remove and returns the last element of the array
+              unshift will add the given value to the begining of the array
+              push will add the given value to the end of the array
+
+
+
+
+
+task 3
+function filterPassingGrades(grades) {  
+  let passing = [];  
+  for (let grade of grades) {  
+    if (grade >= 70) {  
+      passing.push(grade);  
+    } else {  
+      passing.unshift(grade);  
+    }  
+  }  
+  return passing;  
+}  
+
+let scores = [85, 45, 90, 60];  
+console.log(filterPassingGrades(scores));
+
+    [85. 90] it will only print the number greater than 70 as the code only want to print the passing which is grade grater than 70
+
+
+    the actual oupuit is [60,45, 85, 90] i think its like the last task where it arranges the array base on the push and unshift
+
+
+task 4
+function updateStatus(tasks) {  
+  for (let task of tasks) {  
+    task.completed = !task.completed;  
+  }  
+  return tasks;  
+}  
+
+let taskList = [  
+  { id: 1, completed: false },  
+  { id: 2, completed: true }  
+];  
+
+console.log(updateStatus(taskList));  
+console.log(taskList);  
+
+[ { id: 1, completed: true }, { id: 2, completed: false } ]
+[ { id: 1, completed: true }, { id: 2, completed: false } ] this will be the output 
+
+
+
+task 5
+function findValue(arr, target) {  
+  for (let i = 0; i < arr.length; i++) {  
+    if (arr[i] === target) {  
+      return `Found at index ${i}`;  
+    }  
+  }  
+  return "Not found";  
+}  
+
+let data = [5, 12, 8, 130, 44];  
+console.log(findValue(data, 12));  
+console.log(findValue(data, 100));  
+
+Found at index 1
+Not found
+ it will print found a index 1 because number 12 is in the array instead of number 100 which is not thats why it prints not found

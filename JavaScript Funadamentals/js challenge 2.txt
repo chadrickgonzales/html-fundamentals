@@ -1,0 +1,89 @@
+TASK 1:
+let inventory = ["apple", "banana", "cherry", "date", "elderberry"];
+let inventoryCount = [10, 15, 5, 20, 7];
+
+for (let i = 0; i < inventory.length; i++) {
+  console.log(`${inventory[i]}: ${inventoryCount[i]}`);
+}
+
+Output: The code have two arrays the inventory and the inventory CountQueuingStrategy, using a for loop it iterates through the inventory 
+        printing each item along its corresponding count from inventoryCount.
+          apple: 10
+          banana: 15
+          cherry: 5
+          date: 20
+          elderberry: 7
+
+
+
+TASK 2:
+let words = ["zebra", "apple", "mango", "cherry", "banana"];
+
+for (let i = 0; i < words.length; i++) {
+  for (let j = i + 1; j < words.length; j++) {
+    if (words[i] > words[j]) {
+      let temp = words[i];
+      words[i] = words[j];
+      words[j] = temp;
+    }
+  }
+}
+
+console.log(words);
+
+Output: For the first iteration the index 0 will compare to index 1 and will swap accordingly ["apple", "zebra", "mango", "cherry", "banana"]
+        For the second iteration the index 1 will compare to index 2 and will swap accordingly ["apple", "banana", "zebra", "mango", "cherry"]
+        For the third iteration the index 2 will compare to index 3 and will swap accordingly ["apple", "banana", "cherry", "zebra", "mango"]
+        For the last iteration the index 3 will compare to index 4 and will swap accordingly ["apple", "banana", "cherry", "mango", "zebra"]
+        Then this will be the final output ["apple", "banana", "cherry", "mango", "zebra"]
+
+
+
+
+TASK 3:
+let uniqueNumbers = [];
+
+while (uniqueNumbers.length < 10) {
+  let randomNumber = Math.floor(Math.random() * 20) + 1;
+
+  // Check if the randomNumber already exists in the array
+  let exists = false;
+  for (let i = 0; i < uniqueNumbers.length; i++) {
+    if (uniqueNumbers[i] === randomNumber) {
+      exists = true;
+      break;
+    }
+  }
+
+  // If it doesn't exist, add it to the array
+  if (!exists) {
+    uniqueNumbers.push(randomNumber);
+  }
+}
+
+console.log(uniqueNumbers);
+
+Output: For the while loop it will run until uniqueNumbers has 10 numbers.
+        A random number will be generated between 1 - 20.
+        Using a for loop it will check if the number already exists in uniqueNumbers.
+        If the number is not there it will be added to the generated numbers.
+        [5, 12, 19, 3, 7, 15, 9, 1, 14, 20]
+
+
+
+
+TASK 4:
+let sideA = 7;
+let sideB = 10;
+let sideC = 5;
+
+if (sideA + sideB > sideC && sideB + sideC > sideA && sideA + sideC > sideB) {
+  console.log(The sides ${sideA}, ${sideB}, and ${sideC} form a valid triangle.);
+} else {
+  console.log(The sides ${sideA}, ${sideB}, and ${sideC} do not form a valid triangle.);
+}
+
+
+Output: All of the conditions return a True statement in the if else conditions 
+        that is why this is the output of the code.
+        The sides 7, 10, and 5 form a valid triangle. 

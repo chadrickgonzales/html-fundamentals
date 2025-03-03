@@ -1,0 +1,106 @@
+TASK 1
+function calculateSum(arr) {
+  let sum = 0;
+  for (let i = 0; i < arr.length; i++) {
+    sum += arr[i];
+  }
+  return sum;
+}
+
+let numbers = [1, 2, 3, 4];
+console.log("Sum:", calculateSum(numbers));  
+//10
+i assume that in the for loop it will iterate to the numbers given in the array which are the [1,2,3,4]
+and it will total to the number 10.
+
+
+
+
+
+
+TASK 2
+function isEven(num) {
+  if (num % 2 === 0) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+console.log(isEven(4));
+console.log(isEven(7));
+console.log(isEven(0));
+
+//true
+//false
+//true
+i devided the number to 2 to check if its even or odd
+
+
+
+
+
+TASK 3
+function greet(name) {
+  return "Hello, " + name + "!";
+}
+
+function personalizedGreeting(names) {
+  for (let i = 0; i < names.length; i++) {
+    console.log(greet(names[i]));
+  }
+}
+
+let friends = ["Alice", "Bob", "Charlie"];
+personalizedGreeting(friends);
+
+Hello Alice!
+Hello Bob!
+Hello charlie!
+it will iterate into the array and print each result thats why the name changes according to its array order.
+
+
+
+
+
+
+
+
+
+TASK 4
+function reverseArray(arr) {
+  let reversed = [];
+  for (let i = arr.length - 1; i >= 0; i--) {
+    reversed.push(arr[i]);
+  }
+  return reversed;
+}
+
+let originalArray = [10, 20, 30];
+console.log(reverseArray(originalArray));
+console.log(originalArray);
+
+it will be 30 20 10 because compared to the last code that uses increment it uses decrement (i--) thats why it revesed its printing of results.
+
+
+
+
+
+
+TASK 5
+function multiplyMatrix(matrix) {
+  for (let i = 0; i < matrix.length; i++) {
+    for (let j = 0; j < matrix[i].length; j++) {
+      matrix[i][j] *= 2;
+    }
+  }
+  return matrix;
+}
+
+let matrix = [
+  [1, 2],
+  [3, 4],
+];
+console.log(multiplyMatrix(matrix));
+
+[2, 4], [6, 8] that is my answer but the output it produced is [ [ 2, 4 ], [ 6, 8 ] ] i simply forgot the bracket containing it.
